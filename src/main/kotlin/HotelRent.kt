@@ -24,6 +24,7 @@ class HotelRent {
      * - Compare 조건
      * - 비교 방식 :
      * */
+    // 퇴실 시간이 우선되어야 해서, 퇴실시간이 입실시간보다 작아야 함.
     private val endTime = 1
     private val startTime = 2
 
@@ -31,10 +32,10 @@ class HotelRent {
         var answer = 0
 
         val list = mutableListOf<Pair<Int, Int>>().apply {
-            addAll(book_time.flatMap { convertTime(it) }.sortedWith(kotlin.Comparator { o1, o2 ->
+            addAll(book_time.flatMap { convertTime(it) }.sortedWith { o1, o2 ->
                 if (o1.first != o2.first) o1.first.compareTo(o2.first)
                 else o1.second.compareTo(o2.second)
-            }))
+            })
         }
 
         var room = 0
@@ -54,6 +55,7 @@ class HotelRent {
         return listOf(convertTimeToInt(times[0], startTime), convertTimeToInt(times[1], endTime))
     }
 
+    // 여기서 청소시간 추가해야 함
     private fun convertTimeToInt(time: String, type: Int): Pair<Int, Int> {
         return Pair(time.split(":").mapIndexed { index, s ->
             if (index == 0) s.toInt() * 60 else if (index == 1 && type == startTime) s.toInt() else s.toInt() + 10
