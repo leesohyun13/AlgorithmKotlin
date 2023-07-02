@@ -1,4 +1,4 @@
-package structure;
+package java_test;
 
 import java.util.*;
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package structure;
+package java_test;
 
 /**
  https://leetcode.com/problems/sort-colors/solutions/3592562/java-code-100-fast-o-n/
