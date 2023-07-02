@@ -1,10 +1,12 @@
+package kotlin_test
+
 /**
  * 공원 산책 by Lv.1
  *
  * https://school.programmers.co.kr/learn/courses/30/lessons/172928?language=kotlin
  * */
 fun main(args: Array<String>) {
-//    StrollPark().solution(arrayOf("O0S","OOO","OXO","OOO"), arrayOf("N 1","N 1","N 1","N 1","N 1"))
+//    kotlin_test.StrollPark().solution(arrayOf("O0S","OOO","OXO","OOO"), arrayOf("N 1","N 1","N 1","N 1","N 1"))
     StrollPark().solution(arrayOf("SOO", "OXX", "OOO"), arrayOf("E 2", "S 2", "W 1"))
 }
 

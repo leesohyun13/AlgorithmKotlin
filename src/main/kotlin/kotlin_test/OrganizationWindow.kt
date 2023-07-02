@@ -1,4 +1,4 @@
-
+package kotlin_test
 /**
  * 바탕화면 정리 by programmers lv.1
  *

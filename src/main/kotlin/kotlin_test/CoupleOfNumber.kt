@@ -1,3 +1,5 @@
+package kotlin_test
+
 import kotlin.math.min
 
 /**

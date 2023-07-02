@@ -1,15 +1,17 @@
+package kotlin_test
+
 /**
  * Example:
- * var li = ListNode(5)
+ * var li = kotlin_test.ListNode(5)
  * var v = li.`val`
  * Definition for singly-linked list.
- * class ListNode(var `val`: Int) {
- *     var next: ListNode? = null
+ * class kotlin_test.ListNode(var `val`: Int) {
+ *     var next: kotlin_test.ListNode? = null
  * }
  */
 
 fun main(args: Array<String>) {
-//    addTwoNumbers().addTwoNumbers()
+//    kotlin_test.addTwoNumbers().kotlin_test.addTwoNumbers()
 }
 
 class addTwoNumbers {

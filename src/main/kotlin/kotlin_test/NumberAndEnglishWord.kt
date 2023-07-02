@@ -1,3 +1,5 @@
+package kotlin_test
+
 /**
  * 숫자 문자열과 영단어 by programmers lv.1
  * https://school.programmers.co.kr/learn/courses/30/lessons/81301
