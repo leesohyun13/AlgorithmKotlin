@@ -5,6 +5,11 @@ import java.util.HashMap;
 /**
  * TotalFruit
  *
+ * Runtime 51ms
+ * Memory 54.09mb
+ *
+ * hashmap + sliding window
+ *
  * https://leetcode.com/problems/fruit-into-baskets/description/
  * */
 public class TotalFruit {
@@ -27,7 +32,7 @@ public class TotalFruit {
                 }
                 start++;
             }
-            System.out.println("start:  " + start);
+
             ans = Math.max(i-start+1, ans);
         }
 
